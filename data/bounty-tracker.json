@@ -457,7 +457,7 @@
       "closed_at": "2026-03-12T06:17:49Z",
       "close_reason": "Maintainer kishanprmr said PR #8143 was finalized for the bounty and is pending app review due to new scopes.",
       "title": "feat(pieces): add Canva integration piece"
-    }
+    },
     {
       "id": "jhipster-32658",
       "repo": "jhipster/generator-jhipster",

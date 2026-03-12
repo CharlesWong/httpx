@@ -560,9 +560,11 @@
       "pr": 28375,
       "pr_url": "https://github.com/calcom/cal.com/pull/28375",
       "amount": 50,
-      "status": "open",
+      "status": "closed",
+      "closed_at": "2026-03-12T07:09:21Z",
+      "close_reason": "PR was closed on GitHub; no maintainer explanation in PR comments yet.",
       "title": "feat(routing-forms): support all booking question types"
-    },
+    }
     {
       "id": "merit-echo-736",
       "repo": "Merit-Systems/echo",
@@ -671,7 +673,9 @@
       "pr": 10566,
       "pr_url": "https://github.com/zio/zio/pull/10566",
       "amount": 100,
-      "status": "open",
+      "status": "closed",
+      "closed_at": "2026-03-12T01:20:02Z",
+      "close_reason": "PR was closed on GitHub with no comment on the PR thread.",
       "branch": "fix/flatmap-stacktrace-right-side",
       "title": "fix: include RHS flatMap call sites in stacktraces",
       "notes": "ZIO.TracePoint approach. 0 competitors (IsxImattI WIP, kartikbhardwaj closed their own). All StackTracesSpec tests pass."

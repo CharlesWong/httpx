@@ -1,0 +1,14 @@
+{
+  "lastChecks": {
+    "daemonHealth": 1773313610,
+    "strategyReview": 1773243647,
+    "bountyReview": 1741722632,
+    "projectReview": 1773256921,
+    "prReviewComments": 1773313610
+  },
+  "reviewIntervalHours": 24,
+  "daemonCheckIntervalMin": 30,
+  "nextStrategyReview": "2026-03-12T15:40:00Z",
+  "nextBountyReview": "2026-03-12T19:50:00Z",
+  "nextProjectReview": "2026-03-12T19:18:00Z"
+}

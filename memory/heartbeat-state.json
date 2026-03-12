@@ -4,11 +4,13 @@
     "strategyReview": 1773243647,
     "bountyReview": 1741722632,
     "projectReview": 1773256921,
-    "prReviewComments": 1773327106
+    "prReviewComments": 1773327106,
+    "lastProgressReport": 1773327539
   },
   "reviewIntervalHours": 24,
   "daemonCheckIntervalMin": 30,
   "nextStrategyReview": "2026-03-12T15:40:00Z",
   "nextBountyReview": "2026-03-12T19:50:00Z",
-  "nextProjectReview": "2026-03-12T19:18:00Z"
+  "nextProjectReview": "2026-03-12T19:18:00Z",
+  "nextProgressReport": "2026-03-12T18:58:00Z"
 }

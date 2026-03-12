@@ -8,6 +8,7 @@
   - daemon 状态
   - 有无需要 Charles 决策的事项
 - 汇报完毕后更新 `lastProgressReport` 时间戳
+- **所有时间均以 America/Los_Angeles 为准**
 - 时间段 01:00–07:00 (America/Los_Angeles) 不主动打扰，除非有紧急情况
 
 ## 每次 heartbeat 检查:

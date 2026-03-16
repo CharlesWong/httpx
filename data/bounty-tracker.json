@@ -122,7 +122,7 @@
         1324,
         1289
       ],
-      "notes": "6 competing PRs. Our three-tier fallback (networkIdle\u2192load\u2192DOMContentLoaded) is the most robust.",
+      "notes": "6 competing PRs. Our three-tier fallback (networkIdle→load→DOMContentLoaded) is the most robust.",
       "pr_url": "https://github.com/projectdiscovery/katana/pull/1580"
     },
     {
@@ -191,10 +191,11 @@
       "bounty_currency": "USD",
       "title": "fix: use full AES-256 key strength for symmetric encryption",
       "submitted_at": "2026-03-10T14:50:00-07:00",
-      "status": "open",
+      "status": "closed",
       "competing_prs": [],
-      "notes": "0 competitors! Issue provided exact diff. AES-192\u2192AES-256 fix.",
-      "pr_url": "https://github.com/calcom/cal.com/pull/28357"
+      "notes": "0 competitors! Issue provided exact diff. AES-192→AES-256 fix.",
+      "pr_url": "https://github.com/calcom/cal.com/pull/28357",
+      "close_reason": "abandoned: low bounty score"
     },
     {
       "id": "coolify-8866",
@@ -273,9 +274,10 @@
       "pr": 28371,
       "pr_url": "https://github.com/calcom/cal.com/pull/28371",
       "amount": 200,
-      "status": "open",
+      "status": "closed",
       "branch": "fix/guest-availability-on-reschedule",
-      "title": "fix(reschedule): take into account guest availability when host reschedules"
+      "title": "fix(reschedule): take into account guest availability when host reschedules",
+      "close_reason": "abandoned: low bounty score"
     },
     {
       "id": "coolify-7655",
@@ -340,9 +342,10 @@
       "pr": 10555,
       "pr_url": "https://github.com/zio/zio/pull/10555",
       "amount": 300,
-      "status": "open",
+      "status": "closed",
       "branch": "fix/catchall-preserves-defects",
-      "title": "fix: preserve defects when error handlers encounter combined Fail+Die Cause"
+      "title": "fix: preserve defects when error handlers encounter combined Fail+Die Cause",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "dnsx-959",
@@ -383,8 +386,11 @@
       "pr": 2568,
       "pr_url": "https://github.com/tscircuit/tscircuit/pull/2568",
       "amount": 0,
-      "status": "open",
-      "title": "test: capacitive touch slider integration test"
+      "status": "closed",
+      "title": "test: capacitive touch slider integration test",
+      "closed_at": "2026-03-15T02:21:09Z",
+      "close_reason": "auto-closed as stale by github-actions after inactivity",
+      "notes": "Auto-closed by github-actions on 2026-03-15 after stale timeout."
     },
     {
       "id": "tscircuit-docs-505",
@@ -393,8 +399,11 @@
       "pr": 505,
       "pr_url": "https://github.com/tscircuit/docs/pull/505",
       "amount": 0,
-      "status": "open",
-      "title": "docs: add capacitive touch slider tutorial"
+      "status": "closed",
+      "title": "docs: add capacitive touch slider tutorial",
+      "closed_at": "2026-03-15T02:20:16Z",
+      "close_reason": "auto-closed as stale by github-actions after inactivity",
+      "notes": "Auto-closed by github-actions on 2026-03-15 after stale timeout."
     },
     {
       "id": "nuclei-7184",
@@ -423,8 +432,9 @@
       "pr": 4019,
       "pr_url": "https://github.com/zio/zio-http/pull/4019",
       "amount": 250,
-      "status": "open",
-      "title": "build: split zio-http into multiple sub-modules"
+      "status": "closed",
+      "title": "build: split zio-http into multiple sub-modules",
+      "close_reason": "abandoned: maintainer hostility + CLA issues + next-major-release deferral"
     },
     {
       "id": "nuclei-7185",
@@ -443,8 +453,9 @@
       "pr": 28372,
       "pr_url": "https://github.com/calcom/cal.com/pull/28372",
       "amount": 200,
-      "status": "open",
-      "title": "feat(app-store): add Proton Calendar integration via read-only ICS feed"
+      "status": "closed",
+      "title": "feat(app-store): add Proton Calendar integration via read-only ICS feed",
+      "close_reason": "abandoned: low bounty score"
     },
     {
       "id": "activepieces-11680",
@@ -540,8 +551,9 @@
       "pr": 10556,
       "pr_url": "https://github.com/zio/zio/pull/10556",
       "amount": 850,
-      "status": "open",
-      "title": "fix(scheduler): reduce excessive LockSupport.unpark calls in hot path"
+      "status": "closed",
+      "title": "fix(scheduler): reduce excessive LockSupport.unpark calls in hot path",
+      "close_reason": "abandoned: maintainer hostility + CLA issues + next-major-release deferral"
     },
     {
       "id": "zio-10557",
@@ -550,8 +562,9 @@
       "pr": 10557,
       "pr_url": "https://github.com/zio/zio/pull/10557",
       "amount": 750,
-      "status": "open",
-      "title": "feat(Promise): add become method to link Fiber completion to Promise"
+      "status": "closed",
+      "title": "feat(Promise): add become method to link Fiber completion to Promise",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "calcom-28375",
@@ -582,8 +595,9 @@
       "pr": 10558,
       "pr_url": "https://github.com/zio/zio/pull/10558",
       "amount": 650,
-      "status": "open",
-      "title": "fix(test): Gen no longer overwrites Random seed when fromIterable is used"
+      "status": "closed",
+      "title": "fix(test): Gen no longer overwrites Random seed when fromIterable is used",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-10559",
@@ -592,8 +606,9 @@
       "pr": 10559,
       "pr_url": "https://github.com/zio/zio/pull/10559",
       "amount": 2500,
-      "status": "open",
-      "title": "feat(scheduler): add NIO-based scheduler using Java NIO Selector"
+      "status": "closed",
+      "title": "feat(scheduler): add NIO-based scheduler using Java NIO Selector",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-10560",
@@ -602,8 +617,9 @@
       "pr": 10560,
       "pr_url": "https://github.com/zio/zio/pull/10560",
       "amount": 250,
-      "status": "open",
-      "title": "fix(ZStream): buffer(n) buffers exactly n elements"
+      "status": "closed",
+      "title": "fix(ZStream): buffer(n) buffers exactly n elements",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-10561",
@@ -612,8 +628,9 @@
       "pr": 10561,
       "pr_url": "https://github.com/zio/zio/pull/10561",
       "amount": 100,
-      "status": "open",
-      "title": "feat(Queue): add shutdownCause for typed error propagation on shutdown"
+      "status": "closed",
+      "title": "feat(Queue): add shutdownCause for typed error propagation on shutdown",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-schema-1039",
@@ -622,8 +639,9 @@
       "pr": 1039,
       "pr_url": "https://github.com/zio/zio-schema/pull/1039",
       "amount": 0,
-      "status": "open",
-      "title": "fix(json): reject malformed JSON with trailing characters"
+      "status": "closed",
+      "title": "fix(json): reject malformed JSON with trailing characters",
+      "close_reason": "abandoned: maintainer hostility + CLA issues + next-major-release deferral"
     },
     {
       "id": "zio-10562",
@@ -632,8 +650,9 @@
       "pr": 10562,
       "pr_url": "https://github.com/zio/zio/pull/10562",
       "amount": 0,
-      "status": "open",
-      "title": "fix(ZStream): mapZIOPar parallelism no longer bounded by buffer size"
+      "status": "closed",
+      "title": "fix(ZStream): mapZIOPar parallelism no longer bounded by buffer size",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-10563",
@@ -642,8 +661,9 @@
       "pr": 10563,
       "pr_url": "https://github.com/zio/zio/pull/10563",
       "amount": 150,
-      "status": "open",
-      "title": "fix(native): avoid NPE in WeakConcurrentBag on Scala Native"
+      "status": "closed",
+      "title": "fix(native): avoid NPE in WeakConcurrentBag on Scala Native",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-10564",
@@ -652,8 +672,9 @@
       "pr": 10564,
       "pr_url": "https://github.com/zio/zio/pull/10564",
       "amount": 0,
-      "status": "open",
-      "title": "feat(ZStream): add fromInputStreamInterruptible"
+      "status": "closed",
+      "title": "feat(ZStream): add fromInputStreamInterruptible",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     },
     {
       "id": "zio-schema-1040",
@@ -662,9 +683,10 @@
       "pr": 1040,
       "pr_url": "https://github.com/zio/zio-schema/pull/1040",
       "amount": 0,
-      "status": "open",
+      "status": "closed",
       "title": "feat(DynamicValue): add toTypedValueAccumulating returning Validation",
-      "notes": "0 competitors. Adds Validation[String,A] accumulating version alongside existing Either-based toTypedValue. Uses zipWithPar for parallel error collection."
+      "notes": "0 competitors. Adds Validation[String,A] accumulating version alongside existing Either-based toTypedValue. Uses zipWithPar for parallel error collection.",
+      "close_reason": "abandoned: maintainer hostility + CLA issues + next-major-release deferral"
     },
     {
       "id": "zio-10566",
@@ -687,8 +709,9 @@
       "pr": 10565,
       "pr_url": "https://github.com/zio/zio/pull/10565",
       "amount": 0,
-      "status": "open",
-      "title": "feat(Config): support derives Config syntax in Scala 3"
+      "status": "closed",
+      "title": "feat(Config): support derives Config syntax in Scala 3",
+      "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
     }
   ],
   "reviews": [
@@ -704,7 +727,7 @@
       "outcome": "closed_plagiarism",
       "date": "2026-03-11",
       "reason": "Maintainer juliohm closed PR #197 as plagiarism of PR #193 (jph6366, 'GeoPackage Writer', submitted 2026-01-26). PR #193 is still open and unmerged. Our PR likely had very similar structure/approach since there's limited design space for this feature.",
-      "lesson": "Before submitting, ALWAYS check for existing open PRs on the same issue. `gh pr list --repo <repo> --search 'in:title GeoPackage'` or check the issue's linked PRs. If a competing PR exists and is >1 month old, the maintainer likely considers it canonical \u2014 skip the bounty or find a clearly differentiated angle.",
+      "lesson": "Before submitting, ALWAYS check for existing open PRs on the same issue. `gh pr list --repo <repo> --search 'in:title GeoPackage'` or check the issue's linked PRs. If a competing PR exists and is >1 month old, the maintainer likely considers it canonical — skip the bounty or find a clearly differentiated angle.",
       "winning_pr": null
     },
     {

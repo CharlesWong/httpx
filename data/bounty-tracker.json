@@ -53,14 +53,16 @@
       "bounty_currency": "USD",
       "title": "fix: JARM fingerprinting",
       "submitted_at": "2026-03-10T08:30:00-07:00",
-      "status": "open",
+      "status": "closed",
       "competing_prs": [
         808,
         330,
         251
       ],
       "notes": "3 competing PRs, all stale/incomplete. Our fix is comprehensive.",
-      "pr_url": "https://github.com/projectdiscovery/tlsx/pull/954"
+      "pr_url": "https://github.com/projectdiscovery/tlsx/pull/954",
+      "closed_at": "2026-03-19T15:12:24Z",
+      "close_reason": "Superseded by PR #953 (marchantdev, merged). Same approach + dedicated test."
     },
     {
       "id": "subfinder-1764",
@@ -71,7 +73,9 @@
       "bounty_currency": "USD",
       "title": "feat: add -domain-file flag",
       "submitted_at": "2026-03-10T09:00:00-07:00",
-      "status": "open",
+      "status": "merged",
+      "merged_at": "2026-03-20T21:55:24Z",
+      "merged_by": "Mzack9999",
       "competing_prs": [
         1706,
         1424,
@@ -79,8 +83,10 @@
         1297,
         1190
       ],
-      "notes": "5 competing PRs. We added backward compat aliases + tests.",
-      "pr_url": "https://github.com/projectdiscovery/subfinder/pull/1764"
+      "notes": "MERGED + PAID! $75 awarded by dogancanbakir via /tip. Algora confirmed.",
+      "pr_url": "https://github.com/projectdiscovery/subfinder/pull/1764",
+      "bounty_paid": true,
+      "paid_at": "2026-03-25T10:30:45Z"
     },
     {
       "id": "httpx-2449",
@@ -91,7 +97,7 @@
       "bounty_currency": "USD",
       "title": "feat: add -output-format flag (JSON/CSV/text)",
       "submitted_at": "2026-03-10T09:15:00-07:00",
-      "status": "open",
+      "status": "closed",
       "competing_prs": [
         2385,
         2258,
@@ -102,7 +108,9 @@
         1576
       ],
       "notes": "7 competing PRs, most incomplete. We added all 3 formats + tests.",
-      "pr_url": "https://github.com/projectdiscovery/httpx/pull/2449"
+      "pr_url": "https://github.com/projectdiscovery/httpx/pull/2449",
+      "closed_at": "2026-03-19T15:57:40Z",
+      "close_reason": "Superseded by PR #2424. Very close in quality. Minor issue: used require.Equal/require.NotEqual for pointer comparison instead of require.Same/require.NotSame."
     },
     {
       "id": "katana-1580",
@@ -113,7 +121,8 @@
       "bounty_currency": "USD",
       "title": "fix: headless DOM load timeout with three-tier fallback",
       "submitted_at": "2026-03-10T09:45:00-07:00",
-      "status": "open",
+      "status": "closed",
+      "closed_at": "2026-03-20T21:27:40Z",
       "competing_prs": [
         1579,
         1539,
@@ -122,8 +131,9 @@
         1324,
         1289
       ],
-      "notes": "6 competing PRs. Our three-tier fallback (networkIdle→load→DOMContentLoaded) is the most robust.",
-      "pr_url": "https://github.com/projectdiscovery/katana/pull/1580"
+      "notes": "6 competing PRs. Our three-tier fallback was good but winner #1592 also decoupled timeout budgets via basePage reference + regression tests.",
+      "pr_url": "https://github.com/projectdiscovery/katana/pull/1580",
+      "close_reason": "Superseded by PR #1592. Similar graceful degradation approach but winner additionally decoupled timeout budgets via basePage reference and included regression tests."
     },
     {
       "id": "nuclei-7170",
@@ -134,7 +144,7 @@
       "bounty_currency": "USD",
       "title": "fix(authx): replace atomic fetch race with sync.Once + always prefetch",
       "submitted_at": "2026-03-10T10:10:00-07:00",
-      "status": "open",
+      "status": "closed",
       "competing_prs": [
         7141,
         7124,
@@ -142,7 +152,9 @@
         6832
       ],
       "notes": "4 competing PRs. Only PR fixing BOTH bugs (fetch race + prefetch gate). sync.Once is cleanest approach.",
-      "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7170"
+      "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7170",
+      "closed_at": "2026-03-20T00:19:41Z",
+      "close_reason": "Superseded by PR #6976. sync.Once approach was correct but winner wrapped sync.Once+error in dedicated fetchState struct (cleaner encapsulation) + more comprehensive tests: unit concurrency tests AND integration test with 20 concurrent goroutines through FileAuthProvider."
     },
     {
       "id": "coolify-8861",
@@ -167,7 +179,7 @@
       "bounty_currency": "USD",
       "title": "fix: prevent indefinite hangs during TLS operations",
       "submitted_at": "2026-03-10T14:20:00-07:00",
-      "status": "open",
+      "status": "closed",
       "competing_prs": [
         951,
         949,
@@ -180,7 +192,9 @@
         905
       ],
       "notes": "Root cause: tlsHandshakeWithTimeout fundamentally broken (evaluates Handshake() synchronously in select, ctx.Done unreachable). Fixed 3 bugs: ztls handshake race, ztls cipher enum context.TODO, tls cipher enum bare Handshake. 9 competing PRs but most only fix 1-2 of the 3 bugs.",
-      "pr_url": "https://github.com/projectdiscovery/tlsx/pull/955"
+      "pr_url": "https://github.com/projectdiscovery/tlsx/pull/955",
+      "closed_at": "2026-03-19T14:19:51Z",
+      "close_reason": "superseded by PR #949 (cherry-bisht). Missing: tlsConn.Close() deadlocks on zcrypto mutex \u2014 must close underlying raw TCP conn instead."
     },
     {
       "id": "calcom-28357",
@@ -191,11 +205,10 @@
       "bounty_currency": "USD",
       "title": "fix: use full AES-256 key strength for symmetric encryption",
       "submitted_at": "2026-03-10T14:50:00-07:00",
-      "status": "closed",
+      "status": "open",
       "competing_prs": [],
-      "notes": "0 competitors! Issue provided exact diff. AES-192→AES-256 fix.",
-      "pr_url": "https://github.com/calcom/cal.com/pull/28357",
-      "close_reason": "abandoned: low bounty score"
+      "notes": "0 competitors. Maintainer Ryukemeister requested tests (2026-03-11) \u2192 added in d428de6. All review comments replied. Awaiting merge.",
+      "pr_url": "https://github.com/calcom/cal.com/pull/28357"
     },
     {
       "id": "coolify-8866",
@@ -298,9 +311,11 @@
       "pr": 7180,
       "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7180",
       "amount": 200,
-      "status": "open",
+      "status": "closed",
       "branch": "feat/xss-context-analyzer",
-      "title": "feat(fuzz): add XSS reflection context analyzer"
+      "title": "feat(fuzz): add XSS reflection context analyzer",
+      "closed_at": "2026-03-20T14:20:48Z",
+      "close_reason": "Superseded by PR #7164 (ZachL111, merged 2026-03-09). Mzack9999: 'well-structured implementation with good test coverage' but winner had more focused scope and proper integration with existing analyzer framework. Note: a competing PR (songfrank13141) also addressed coderabbitai comments in a fork, adding pressure."
     },
     {
       "id": "katana-1584",
@@ -309,9 +324,11 @@
       "pr": 1584,
       "pr_url": "https://github.com/projectdiscovery/katana/pull/1584",
       "amount": 200,
-      "status": "open",
+      "status": "closed",
       "branch": "feat/migrate-go-tree-sitter-official",
-      "title": "feat: migrate from smacker/go-tree-sitter to pure-Go tree-sitter"
+      "title": "feat: migrate from smacker/go-tree-sitter to pure-Go tree-sitter",
+      "closed_at": "2026-03-20T18:21:32Z",
+      "close_reason": "Superseded by maintainer's own PR #1570 (same approach). Mzack9999 closed in favor of his own. WARNING flag was correct \u2014 never submit when maintainer has competing PR open."
     },
     {
       "id": "nuclei-7181",
@@ -320,9 +337,11 @@
       "pr": 7181,
       "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7181",
       "amount": 150,
-      "status": "open",
+      "status": "closed",
       "branch": "fix/fuzz-numeric-path-segments",
-      "title": "fix(fuzz): include numeric path segments in URL fuzzing"
+      "title": "fix(fuzz): include numeric path segments in URL fuzzing",
+      "closed_at": "2026-03-20T01:52:54Z",
+      "close_reason": "Superseded by PR #7253 (promisingcoder). Root cause was path mutation bug in retryablehttp.Request.Clone() shallow-copying URL pointer. Winner snapshotted original path at parse time + regression test. Our OrderedMap approach addressed symptom not root cause."
     },
     {
       "id": "nuclei-7182",
@@ -331,9 +350,11 @@
       "pr": 7182,
       "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7182",
       "amount": 150,
-      "status": "open",
+      "status": "closed",
       "branch": "feat/template-profile-improvements",
-      "title": "feat(profiles): improve template profile management"
+      "title": "feat(profiles): improve template profile management",
+      "closed_at": "2026-03-20T13:04:44Z",
+      "close_reason": "Superseded by PR #6858. Maintainer Mzack9999: 'cleanest architectural design' but separate pkg/profile package adds maintenance overhead not justified for feature scope. Winner took pragmatic approach with minimal code footprint + comprehensive tests."
     },
     {
       "id": "zio-10555",
@@ -354,9 +375,11 @@
       "pr": 959,
       "pr_url": "https://github.com/projectdiscovery/dnsx/pull/959",
       "amount": 100,
-      "status": "open",
+      "status": "closed",
       "branch": "feat/auto-wildcard-detection",
-      "title": "feat: add --auto-wildcard flag for per-domain wildcard detection"
+      "title": "feat: add --auto-wildcard flag for per-domain wildcard detection",
+      "closed_at": "2026-03-20T17:57:33Z",
+      "close_reason": "Superseded by PR #966. Mzack9999: 'well-structured with tests and README' but changeset too large and didn't follow maintainer direction to extract wildcard logic into shared projectdiscovery/utils package for cross-tool reuse."
     },
     {
       "id": "reconfuzz-96",
@@ -412,8 +435,10 @@
       "pr": 7184,
       "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7184",
       "amount": 100,
-      "status": "open",
-      "title": "ci: integrate typos spell checker into CI workflow"
+      "status": "closed",
+      "title": "ci: integrate typos spell checker into CI workflow",
+      "closed_at": "2026-03-19T20:34:52Z",
+      "close_reason": "superseded by PR #7158 (telewin95, merged). Our PR had well-structured workflow but did not fix existing typos in codebase \u2014 CI would have failed on first run against dev branch."
     },
     {
       "id": "jhipster-32657",
@@ -443,8 +468,10 @@
       "pr": 7185,
       "pr_url": "https://github.com/projectdiscovery/nuclei/pull/7185",
       "amount": 250,
-      "status": "open",
-      "title": "feat(core): add honeypot detection"
+      "status": "closed",
+      "title": "feat(core): add honeypot detection",
+      "closed_at": "2026-03-20T15:52:25Z",
+      "close_reason": "Superseded by PR #7277 (HarshadaGawas05, merged 2026-03-20). Mzack9999: our active canary probing approach introduces extra network traffic/latency per target + had a build failure. Winner used passive template match concentration tracking \u2014 lighter, no extra requests."
     },
     {
       "id": "calcom-28372",
@@ -712,6 +739,26 @@
       "status": "closed",
       "title": "feat(Config): support derives Config syntax in Scala 3",
       "close_reason": "closed_by_maintainer_hearnadam_2026-03-12T15:44Z"
+    },
+    {
+      "id": "keephq-keep-6133",
+      "repo": "keephq/keep",
+      "pr_number": 6133,
+      "issue_number": 2112,
+      "bounty_amount": 200,
+      "bounty_currency": "USD",
+      "title": "feat: add SNMP provider with SNMPv1/v2c/v3, trap listener, polling, OID mapping",
+      "submitted_at": "2026-03-25T19:19:03.738851Z",
+      "status": "open",
+      "competing_prs": [
+        5525,
+        5552,
+        5599,
+        5637,
+        6107
+      ],
+      "notes": "Best-of-all: SNMPv1/v2c/v3, trap listener + polling, OID mapping, 25 unit tests. All competing PRs have 0 reviews as of 2026-03-25.",
+      "pr_url": "https://github.com/keephq/keep/pull/6133"
     }
   ],
   "reviews": [
@@ -727,7 +774,7 @@
       "outcome": "closed_plagiarism",
       "date": "2026-03-11",
       "reason": "Maintainer juliohm closed PR #197 as plagiarism of PR #193 (jph6366, 'GeoPackage Writer', submitted 2026-01-26). PR #193 is still open and unmerged. Our PR likely had very similar structure/approach since there's limited design space for this feature.",
-      "lesson": "Before submitting, ALWAYS check for existing open PRs on the same issue. `gh pr list --repo <repo> --search 'in:title GeoPackage'` or check the issue's linked PRs. If a competing PR exists and is >1 month old, the maintainer likely considers it canonical — skip the bounty or find a clearly differentiated angle.",
+      "lesson": "Before submitting, ALWAYS check for existing open PRs on the same issue. `gh pr list --repo <repo> --search 'in:title GeoPackage'` or check the issue's linked PRs. If a competing PR exists and is >1 month old, the maintainer likely considers it canonical \u2014 skip the bounty or find a clearly differentiated angle.",
       "winning_pr": null
     },
     {
@@ -736,13 +783,110 @@
       "date": "2026-03-11",
       "reason": "ShadowArcanist closed both PRs (WordPress+OLS and Docker Mailserver+Roundcube) at 04:55 UTC. Multiple competitors also closed. No winning PR merged yet - issues 8264/8266 may still be open.",
       "lesson": "Coolify maintainer does periodic sweeps closing duplicate/competing PRs. Watch for re-open or new bounty attempt window."
+    },
+    {
+      "pr_id": "tlsx-955",
+      "outcome": "closed_superseded",
+      "date": "2026-03-19",
+      "reason": "PR #949 by cherry-bisht merged. Root cause: tlsConn.Close() on timeout deadlocks on zcrypto internal mutex. Fix requires passing raw TCP conn separately and closing that instead. Our PR fixed the select() race + context.TODO issues but missed this deeper layer.",
+      "winning_pr": 949,
+      "winning_author": "cherry-bisht",
+      "lesson": "When working on TLS/zcrypto issues: always check for mutex deadlock scenarios in Close() paths. tlsConn.Close() is not safe to call from a timeout context on zcrypto. Must keep a reference to the underlying net.Conn and close that directly on timeout."
+    },
+    {
+      "pr_id": "tlsx-955",
+      "outcome": "closed_superseded",
+      "date": "2026-03-19",
+      "winner": "cherry-bisht PR #949",
+      "reason": "Our fix was clean (double-select fairness, regression test) but missed one critical bug: tlsConn.Close() on zcrypto can deadlock internal mutex. Winner passed underlying raw net.Conn separately and closed it on timeout. Also parallelized cipher enumeration (CipherConcurrency).",
+      "lesson": "For TLS timeout fixes: NEVER call tlsConn.Close() on timeout \u2014 pass the underlying net.Conn separately and close that instead. Also: parallelize cipher enumeration. Maintainer (Mzack9999) praised our approach but the zcrypto deadlock was the dealbreaker."
+    },
+    {
+      "pr_id": "nuclei-7184",
+      "outcome": "closed_superseded",
+      "date": "2026-03-19",
+      "winner": "telewin95 PR #7158 (merged 2026-03-19T18:17)",
+      "reason": "Our CI workflow was well-structured but we only added the typos checker without fixing existing typos. The winner fixed existing typos AND added the CI check.",
+      "lesson": "For \"add linter/checker to CI\" bounties: always (1) run the checker on existing codebase, (2) fix all existing violations as part of the PR. Adding the CI check alone will fail on first run."
+    },
+    {
+      "pr_id": "httpx-2449",
+      "outcome": "closed_superseded",
+      "date": "2026-03-19",
+      "winner": "PR #2424 (merged)",
+      "reason": "Maintainer called our PR \"very close in quality\". Lost on a minor testing detail: require.Equal vs require.Same for pointer comparison.",
+      "lesson": "When writing Go tests that assert pointer identity (same object, not equal value), use require.Same/require.NotSame, not require.Equal/require.NotEqual. Small detail, but maintainers notice."
+    },
+    {
+      "pr_id": "tlsx-954",
+      "outcome": "closed_superseded",
+      "date": "2026-03-19",
+      "winner": "PR #953 (marchantdev, merged)",
+      "reason": "Same approach but winner included a dedicated test.",
+      "lesson": "Always include a dedicated regression/integration test. Identical fixes with tests beat identical fixes without."
+    },
+    {
+      "pr_id": "nuclei-7170",
+      "outcome": "closed_superseded",
+      "date": "2026-03-19",
+      "winner": "PR #6976 (same sync.Once approach)",
+      "reason": "Maintainer called ours \"one of the strongest submissions\" and sync.Once was exactly right. Lost on: (1) encapsulation \u2014 winner wrapped sync.Once+error in a dedicated fetchState struct; (2) test coverage \u2014 winner had both unit concurrency tests AND integration test with 20 goroutines through FileAuthProvider.",
+      "lesson": "For concurrency fixes: (1) encapsulate state in a dedicated struct instead of loose vars; (2) write BOTH unit-level concurrency tests AND integration tests simulating real concurrent load. Maintainer feedback: our quality was excellent, lost on architecture + test depth."
+    },
+    {
+      "pr_id": "katana-1584",
+      "outcome": "closed_superseded",
+      "date": "2026-03-20",
+      "winner": "Mzack9999 own PR #1570",
+      "reason": "Maintainer had competing PR open since Mar 6. Same approach. He merged his own.",
+      "lesson": "NEVER submit when the maintainer has their own open PR on the same issue. They will always merge their own. Check `gh pr list` AND `gh issue view` for linked PRs by maintainers before starting work."
+    },
+    {
+      "pr_id": "dnsx-959",
+      "outcome": "closed_superseded",
+      "date": "2026-03-20",
+      "winner": "PR #966 (focused scope + utils extraction)",
+      "reason": "Maintainer wanted logic extracted into shared projectdiscovery/utils package. Our PR kept it self-contained \u2014 'too large' and didn't follow maintainer direction.",
+      "lesson": "Before implementing, READ the maintainer's comments on the issue for direction hints. If they mention 'extract to utils' or 'keep focused scope', follow that exactly. Larger changesets = higher rejection risk even if technically superior."
+    },
+    {
+      "pr_id": "nuclei-7180",
+      "outcome": "closed_superseded",
+      "date": "2026-03-20",
+      "winner": "ZachL111 PR #7164 (merged 2026-03-09)",
+      "reason": "Merged before our PR even went in. 'Well-structured + good coverage' but winner had more focused scope + better integration with existing framework. Also: a competing fork (songfrank13141) fixed same coderabbitai comments, splitting reviewer attention.",
+      "lesson": "Check if issue is ALREADY resolved by a merged PR before submitting. PR #7164 merged on Mar 9 \u2014 we submitted #7180 on Mar 11, two days after. Always `gh pr list --state merged --search 'issue'` before starting work."
+    },
+    {
+      "pr_id": "nuclei-7185",
+      "outcome": "closed_superseded",
+      "date": "2026-03-20",
+      "winner": "HarshadaGawas05 PR #7277 (merged 2026-03-20T08:40)",
+      "reason": "Active canary probing approach = extra network requests per target + had a build failure. Winner used passive concentration tracking \u2014 zero extra requests, no latency.",
+      "lesson": "For detection/analysis features: prefer passive approaches over active probing. Active = extra network traffic = latency = maintainers won't accept it. Always ensure CI passes (build failures = instant rejection signal). Also: fix build errors before maintainer review."
+    },
+    {
+      "pr_id": "nuclei-7182",
+      "outcome": "closed_superseded",
+      "date": "2026-03-20",
+      "winner": "PR #6858 (pragmatic inline approach)",
+      "reason": "Maintainer said ours had 'cleanest architectural design' but separate pkg/profile package adds too much maintenance overhead for feature scope. Winner kept profile preprocessing inline in CLI config layer, minimal footprint + comprehensive tests.",
+      "lesson": "For CLI feature additions: resist the urge to create a new package/abstraction layer. Inline the logic in the existing config/CLI layer. Maintainers prefer 'pragmatic minimal footprint' over 'cleanest architecture' when maintenance overhead is the concern. Over-engineering kills otherwise great PRs."
+    },
+    {
+      "pr_id": "nuclei-7181",
+      "outcome": "closed_superseded",
+      "date": "2026-03-20",
+      "winner": "promisingcoder PR #7253 (merged 2026-03-20T01:40)",
+      "reason": "We fixed the symptom (OrderedMap for iteration order) but missed the root cause: retryablehttp.Request.Clone() shallow-copies URL pointer, corrupting path across sequential Rebuild() calls. Winner snapshotted original path at parse time.",
+      "lesson": "Always trace bugs to root cause, not symptoms. URL path mutation in HTTP request cloning: Clone() shallow-copies pointer \u2014 snapshot the original path string at parse time. Fixing iteration order was a workaround, not the real fix."
     }
   ],
   "stats": {
-    "total_submitted": 16,
-    "total_merged": 0,
+    "total_submitted": 17,
+    "total_merged": 1,
     "total_rejected": 2,
-    "total_earned": 0,
+    "total_earned": 75,
     "win_rate": null
   }
 }
